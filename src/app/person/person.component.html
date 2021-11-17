@@ -1,0 +1,7 @@
+<app-person-detail *ngFor="let P of peopleList" IPerson = "P">
+    <p>{{ P.firstName }}</p>
+    <p>{{ P.lastName }}</P>
+    <p>{{ P.innovation }}</p>
+    <p>{{ P.year }}</p>
+    <button [routerLink]="['/people', P.firstName]">Click For More Info</button>
+</app-person-detail>
